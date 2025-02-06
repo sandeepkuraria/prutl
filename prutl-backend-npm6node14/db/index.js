@@ -1,0 +1,72 @@
+//db/index.js
+const createUsersTable = require('./createTables/createUsersTable');
+const createMembershipsTable = require('./createTables/createMembershipsTable');
+const createOrganizationsTable = require('./createTables/createOrganizationsTable');
+const createEventsTable = require('./createTables/createEventsTable');
+const createCompetitionsTable = require('./createTables/createCompetitionsTable');
+const createEventScheduleTable = require('./createTables/createEventScheduleTable');
+const createStreamTable = require('./createTables/createStreamTable');
+const createParticipantsTable = require('./createTables/createParticipantsTable');
+const createSponsorsTable = require('./createTables/createSponsorsTable');
+const createTeamsTable = require('./createTables/createTeamsTable');
+const createCommitteesTable = require('./createTables/createCommitteesTable');
+const createCommitteeMembersTable = require('./createTables/createCommitteeMembersTable');
+const createAwardsTable = require('./createTables/createAwardsTable');
+const createScoresTable = require('./createTables/createScoresTable');
+const createSponsorshipsTable = require('./createTables/createSponsorshipsTable');
+const createPassionFrameworkDimensionsTable = require('./createTables/createPassionFrameworkDimensionsTable');
+const createDimensionScoresTable = require('./createTables/createDimensionScoresTable');
+const createUserGroupsTable = require('./createTables/createUserGroupsTable');
+const createFamiliesTable = require('./createTables/createFamiliesTable');
+const createFamilyMembersTable = require('./createTables/createFamilyMembersTable');
+const createAIInsightsTable = require('./createTables/createAIInsightsTable');
+const createVenuesTable = require('./createTables/createVenuesTable');
+const createHallsTable = require('./createTables/createHallsTable');
+const createEventBookingsTable = require('./createTables/createEventBookingsTable');
+const createGuestServicesTable = require('./createTables/createGuestServicesTable');
+const createBookingServicesTable = require('./createTables/createBookingServicesTable');
+const createCategoriesTable = require('./createTables/createCategoriesTable');
+const createRolesTable = require('./createTables/createRolesTable');
+const createTeamMembersTable = require('./createTables/createTeamMembersTable');
+const createPrutlFrameworkDimensionsTable = require('./createTables/createPrutlFrameworkDimensionsTable');
+const createVehiclesTable = require('./createTables/createVehiclesTable');
+const createParkingAreaTable = require('./createTables/createParkingAreaTable');
+// ... other table creation imports
+
+const createTables = async () => {
+    await createUsersTable();
+    await createMembershipsTable();
+    await createOrganizationsTable();
+    await createEventsTable();
+    await createCompetitionsTable();
+    await createEventScheduleTable();
+    await createStreamTable();
+    await createParticipantsTable();
+    await createSponsorsTable();
+    await createTeamsTable();
+    await createCommitteesTable();
+    await createCommitteeMembersTable();
+    await createAwardsTable();
+    await createScoresTable();
+    await createSponsorshipsTable();
+    await createPassionFrameworkDimensionsTable();
+    await createDimensionScoresTable();
+    await createUserGroupsTable();
+    await createFamiliesTable();
+    await createFamilyMembersTable();
+    await createAIInsightsTable();
+    await createVenuesTable();
+    await createHallsTable();
+    await createEventBookingsTable();
+    await createGuestServicesTable();
+    await createBookingServicesTable();
+    await createCategoriesTable();
+    await createRolesTable();
+    await createTeamMembersTable();
+    await createPrutlFrameworkDimensionsTable();
+    await createVehiclesTable();
+    await createParkingAreaTable();
+  // ... other table creation function calls
+};
+
+module.exports = createTables;

@@ -1,0 +1,148 @@
+{
+    "info": {
+        "_postman_id": "d6f3a74b-eca5-4a29-90f0-fb8e99f13f7e",
+        "name": "Organizations API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Create Organization",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer <your_token>"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"org_code\": \"ORG001\",\n    \"org_name\": \"Example Organization\",\n    \"org_type\": \"School\",\n    \"address\": \"123 Main St\",\n    \"phone_number\": \"123-456-7890\",\n    \"contact_person\": \"John Doe\",\n    \"city\": \"Example City\",\n    \"county\": \"Example County\",\n    \"state\": \"Example State\",\n    \"country\": \"Example Country\",\n    \"pin_code\": \"123456\",\n    \"remark\": \"An example organization.\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:5000/api/organizations",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "organizations"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get All Organizations",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer <your_token>"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:5000/api/organizations",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "organizations"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Organization by ID",
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer <your_token>"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:5000/api/organizations/1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "organizations",
+                        "1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Update Organization",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer <your_token>"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"org_code\": \"ORG001\",\n    \"org_name\": \"Updated Organization\",\n    \"org_type\": \"College\",\n    \"address\": \"456 Main St\",\n    \"phone_number\": \"123-456-7890\",\n    \"contact_person\": \"Jane Doe\",\n    \"city\": \"Updated City\",\n    \"county\": \"Updated County\",\n    \"state\": \"Updated State\",\n    \"country\": \"Updated Country\",\n    \"pin_code\": \"654321\",\n    \"remark\": \"An updated example organization.\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:5000/api/organizations/1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "organizations",
+                        "1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Delete Organization",
+            "request": {
+                "method": "DELETE",
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer <your_token>"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:5000/api/organizations/1",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "organizations",
+                        "1"
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,1954 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+body.dark-mode {
+  background-color: #020617;
+  color: #e0e0e0;
+}
+body.dark-mode  .text-home{
+  color: #d1644d;
+}
+
+.text-home{
+  color: #d1644d;
+}
+
+
+.button-bg{
+  background-color: #d1644d;
+}
+body.dark-mode .button-bg{
+  background-color: #d1644d;
+}
+
+.button-bg:hover{
+  background-color: #ff7f50;
+}
+body.dark-mode .button-bg:hover{
+  background-color: #ff7f50;
+}
+
+/* Navbar */
+
+.navlinks{
+color: black;
+font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.navlinks:hover {
+  color: #575758;
+}
+body.dark-mode .navlinks {
+  color: #e0e0e0;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+body.dark-mode .navlinks:hover {
+  color: #575758;
+}
+.navbarLogo:hover{
+  color: #575758;
+}
+body.dark-mode .navbarLogo:hover{
+  color: #575758;
+}
+body.dark-mode .navbarLogo{
+  color: #e0e0e0;
+}
+.navbarLogo {
+  color: #020617;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  /* line-height: 1 !important; */
+  font-weight: 700;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+} 
+.navbar {
+  padding: 10px 20px;
+  top: 0;
+  background-color: rgba(236, 236, 235, 0.8);
+  z-index: 40;
+}
+
+body.dark-mode .navbar {
+  
+  background-color: rgba(18, 18, 18, 0.824);
+}
+.tableHeadEditDelete {
+  background-color: #f0f2f5;
+ 
+}
+
+body.dark-mode .tableHeadEditDelete {
+  
+  background-color: #0f1013;
+}
+.navbar-logo-svg {
+  margin-right: 8px;
+}
+
+.registerCard{
+  background-color: #ffffff;
+
+}
+body.dark-mode  .registerCard{
+  background-color: #020617;
+}
+/* login signup form */
+.fontColor {
+  color: #020617;
+  }
+  body.dark-mode .fontColor {
+  color: #e0e0e0;
+  }
+.loginFormContainer{
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .loginFormContainer{
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+
+
+.signupFormContainer{
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .signupFormContainer{
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+
+.user-list{
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .user-list{
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+
+.membership-list{
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .membership-list{
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+
+
+.organization-list{
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .organization-list{
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+
+.event-list{
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .event-list{
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.stream-list{
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .stream-list{
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.participant-list{
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .participant-list{
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.sponsor-list{
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .sponsor-list{
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.team-list{
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .team-list{
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.committee-list{
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .committee-list{
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.committee-member-list{
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .committee-member-list{
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.award-list{
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .award-list{
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.event-schedule-list{
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .event-schedule-list{
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.competition-list{
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .competition-list{
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.score-list{
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .score-list{
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.sponsorship-list {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .sponsorship-list {
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.passionFrameworkDimension-list {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .passionFrameworkDimension-list {
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.dimensionScore-list{
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .dimensionScore-list {
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.userGroup-list{
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .userGroup-list {
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.family-list{
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .family-list {
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.family-member-list {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .family-member-list  {
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.ai-insight-list {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .ai-insight-list  {
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.venue-list  {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .venue-list   {
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.hall-list {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .hall-list  {
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.guest-service-list {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .guest-service-list  {
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.event-booking-list {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .event-booking-list{
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.booking-service-list {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .booking-service-list{
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.role-list {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+body.dark-mode  .role-list{
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+
+.team-member-list{
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+body.dark-mode  .team-member-list{
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.prutl-dimension-list{
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+body.dark-mode  .prutl-dimension-list{
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.category-list{
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+body.dark-mode  .category-list{
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.parking-area-list{
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+body.dark-mode  .parking-area-list{
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.vehicle-list{
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+body.dark-mode  .vehicle-list{
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+
+/* bottom remark card */
+.bottom-remark-card{
+  padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #d1644de6;
+    border-radius: 0.4rem;
+}
+
+.remark-text{
+  line-height: 1.75rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-align: center;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+.remark-profile-image{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid #fff; 
+
+
+}
+
+.remark-profile-username{
+  font-weight: 600;
+  font-size: 1.125rem;
+    line-height: 1.75rem;
+      font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+.remark-profile-image-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.remark-profile-image-wrapper,
+.remark-profile-username-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: 10px 0; */
+}
+
+.remark-profile-image {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid #fff;
+}
+
+textarea{
+  /* background-color: #1e1e1e; */
+  /* border-color: #444; */
+  color: #333;
+}
+body.dark-mode textarea{
+  background-color: #1e1e1e;
+  border-color: #444;
+  color: #e0e0e0;
+}
+
+/* error color */
+.errorTextColor{
+color:#b91c1c;
+}
+body.dark-mode .errorTextColor{
+  color: #b91c1c;
+  }
+.errorButtonbg{
+background-color: #b91c1c;
+}
+body.dark-mode .errorButtonbg{
+background-color: #b91c1c;
+}
+
+.selection{
+  margin-bottom: 20px;
+  display: block;
+  margin-bottom: 5px;
+  width: 97%;
+  padding:0.64rem 0.64rem;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+body.dark-mode .selection {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+ .selection:focus {
+  outline: none;
+  border-color: #d1644d;
+  box-shadow: 0 0 5px rgba(145, 64, 47, 0.5);
+}
+body.dark-mode .selection:focus {
+  outline: none;
+  border-color: #d1644d;
+  box-shadow: 0 0 5px rgba(145, 64, 47, 0.5);
+}
+
+.datalist .option{
+  background: #ffffff;
+}
+
+.backgroundLightDark{
+  background-color: white;
+}
+body.dark-mode .backgroundLightDark{
+  background-color: #1e1e1e;
+}
+/* *************************************************************************************************************** */
+
+
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body.dark-mode {
+  background-color: #020617;
+  color: #e0e0e0;
+}
+
+/* Container Styles */
+/* .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 300px 50px 300px;
+} */
+.userManagementContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* padding: 20px 300px 50px 300px; */
+}
+
+
+.heading {
+  letter-spacing: -.025em;
+  font-weight: 900;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.head-text-info {
+  margin-top: 1.5rem;
+  margin-right: auto;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Card Styles */
+/* .card {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+} */
+
+/* svg-logo */
+.asterisks-logo-svg {
+  margin-right: 8px;
+}
+
+/* Button Styles */
+.contactusbtn {
+  background-color: #d1644d;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.contactusbtn:hover {
+  background-color: #91402f;
+  text-decoration: none;
+
+}
+
+.btn {
+  background-color: #d1644d;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #91402f;
+}
+
+/* Input Group Styles */
+/* .input-group, .remark-group{
+  margin-bottom: 20px;
+} */
+
+body.dark-mode .remark-text{
+color: #ccc;
+  /* background-color: #0f1013; */
+}
+
+/* .remark-group {
+padding: 0rem;
+flex-direction: column;
+} */
+/* .remark-group textarea{
+  margin: 0rem;
+  background-color: #64748b;
+} */
+
+.keepSignedIn {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.input-group label,.remark-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding:0.64rem 0.64rem;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group select {
+  width: 100%;
+  padding:0.64rem 0.64rem;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.remark-group textarea {
+  width: 97%;
+  padding:0.64rem 0.64rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  font-size: .875rem;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* border: 0.2px solid #ccc; */
+  border-radius: 4px;
+  /* transition: border-color 0.3s, box-shadow 0.3s; */
+  border: 1px solid #ccc;
+}
+body.dark-mode .remark-group textarea{
+  background-color: #1e1e1e;
+  border-color: #444;
+  color: #e0e0e0;
+}
+
+.remark-group textarea:focus {
+  border-color: #d1644d;
+  box-shadow: 0 0 5px rgba(145, 64, 47, 0.5);
+}
+
+body.dark-mode .remark-group textarea:focus {
+  border-color: #d1644d;
+  box-shadow: 0 0 5px rgba(145, 64, 47, 0.5);
+}
+
+
+body.dark-mode .input-group input {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border-color: #444;
+}
+body.dark-mode .input-group select {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #d1644d;
+  box-shadow: 0 0 5px rgba(145, 64, 47, 0.5);
+}
+.input-group select:focus {
+  outline: none;
+  border-color: #d1644d;
+  box-shadow: 0 0 5px rgba(145, 64, 47, 0.5);
+}
+
+body.dark-mode .input-group input:focus {
+  border-color: #d1644d;
+  box-shadow: 0 0 5px rgba(145, 64, 47, 0.5);
+}
+
+body.dark-mode .input-group select:focus {
+  border-color: #d1644d;
+  box-shadow: 0 0 5px rgba(145, 64, 47, 0.5);
+}
+
+/* Navbar Styles */
+
+.navbar {
+  padding: 10px 20px;
+  top: 0;
+  background-color: rgba(236, 236, 235, 0.8);
+  z-index: 1000;
+}
+
+body.dark-mode .navbar {
+  
+  background-color: rgba(18, 18, 18, 0.824);
+}
+
+body.dark-mode .navbar .navbar-links a {
+  color: #fff;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  color: #020617;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  line-height: 1 !important;
+  font-weight: 700;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+} 
+
+.navbar-logo-svg {
+  margin-right: 8px;
+}
+
+.navbar-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a {
+  color: #020617;
+  margin-right: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* navbar text size */
+
+.navbar-links{
+  /* gap: .875rem; */
+  display: flex;
+  align-items: center;
+
+}
+.nav-text-sm {
+  line-height: 1.5rem;
+  font-weight: 600;
+  font-size: .875rem;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+
+.navbar-button {
+  background: none;
+  border: none;
+  color: #020617;
+  cursor: pointer;
+  /* padding: 0; */
+  line-height: 1.5rem;
+  font-weight: 600;
+  font-size: .875rem;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+
+body.dark-mode .navbar-logo:hover {
+  color: #575758;
+}
+
+body.dark-mode .navbar-links a:hover {
+  color: #575758;
+  text-decoration:none ;
+}
+
+body.dark-mode .navbar-links .navbar-button:hover {
+  color: #575758;
+}
+
+.navbar-logo:hover {
+  /* color: #575758; */
+  text-decoration:none ;
+}
+
+.navbar-links a:hover {
+  color: #575758;
+  text-decoration:none ;
+}
+
+.navbar-links .navbar-button:hover {
+  color: #575758;
+}
+
+body.dark-mode .navbar-button {
+  color: #fff;
+  line-height: 1.5rem;
+  font-weight: 600;
+  font-size: .875rem;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body.dark-mode .navbar-logo {
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-toggle {
+    display: block;
+    color: #020617;
+  }
+  .navbar-logo {
+    margin-bottom: 10px;
+  }
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar-links.open {
+    display: flex;
+  }
+  .navbar-links a, .navbar-links .navbar-button {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+  }
+  .navbar-logo {
+    font-size: 1rem;
+  }
+  .navbar-button {
+    font-size: .75rem;
+  }
+}
+
+
+
+/* Add these styles to your CSS file */
+.navbar .dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  line-height: 1.5rem;
+  font-weight: 600;
+  font-size: .875rem;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+.dropdown-toggle:hover{
+  color: #575758;
+}
+body.dark-mode .dropdown-toggle:hover{
+  color: #575758;
+}
+
+/* .dropdown-toggle::after {
+  content: '';
+  margin-left: 0.5rem;
+  border: 0.4rem solid transparent;
+  border-top-color: currentColor;
+  transform: rotate(0);
+  transition: transform 0.3s ease;
+} */
+
+.dropdown-menu {
+  display: block;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  min-width: 160px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+  border-top:  groove;
+ border-top-width: 2px;
+  border-top-color:  #d1644d;
+}
+
+body.dark-mode .dropdown-menu{
+    background-color: rgba(18, 18, 18, 0.824);
+}
+
+.dropdown-item:hover{
+width: 100%;
+height: auto;
+      background-color: #f1f1f1;
+}
+body.dark-mode .dropdown-item:hover{
+width: 100%;
+height: auto;
+      background-color: #f1f1f1;
+}
+
+.dropdown-item {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: block;
+  color: black;
+  align-items: center;
+  line-height: 1.5rem;
+  font-weight: 600;
+  font-size: .875rem;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+/* .dropdown-item:hover {
+  background-color: #f1f1f1;
+} */
+
+.navbar-button:focus {
+  outline: none;
+}
+
+/* .navbar .dropdown .dropdown-toggle.active::after {
+  transform: rotate(180deg);
+} */
+
+
+/* Footer Styles */
+.footer {
+ 
+   padding-top: 6rem;
+        padding-bottom: 6rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        max-width: 80rem;
+        margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+     text-align: center;
+}
+
+.footer-links-container{
+  justify-content: center;
+  display: flex;
+
+}
+.footerLink{
+  padding-left: 1.5rem;
+  line-height: 1.5rem;
+  line-height: 1.5rem;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #d1644d;
+  text-decoration: none;
+}
+.footerLink:hover {
+  color: #ff7f50; 
+}
+body.dark-mode .footerLink{
+  padding-left: 1.5rem;
+  line-height: 1.5rem;
+  line-height: 1.5rem;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #d1644d;
+  text-decoration: none;
+}
+body.dark-mode .footerLink:hover {
+  color: #ff7f50; 
+}
+body.dark-mode .footer {
+  background-color: #020617;
+}
+
+body.dark-mode .dropdown-toggle {
+  color: #fff;
+}
+
+.footer-copyright-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-copyright-text{
+  color: #64748b;
+}
+
+body.dark-mode .footer-copyright-text{
+  color: #64748b;
+}
+.footer-social-links-container{
+  justify-content: center;
+  row-gap: 1rem;
+  column-gap: 1.5rem;
+  flex-wrap: wrap;
+  display: flex;
+  position: relative;
+  padding: 2rem;
+  
+}
+.footer-logo{
+  color: #020617;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  line-height: 1 !important;
+  font-weight: 700;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+.footer-logo:hover .pattern-fb {
+  fill: #d1644d; /* Change this to your desired hover fill color for pattern-fb */
+}
+
+.footer-logo:hover .pattern-fb-back {
+  fill: #f4f8fd; /* Change this to your desired hover fill color for pattern-fb-back */
+}
+.footer-logo:hover .pattern-insta {
+  fill: #feffff; /* Change this to your desired hover fill color for pattern-fb */
+}
+
+.footer-logo:hover .pattern-insta-back {
+  fill: #d1644d; /* Change this to your desired hover fill color for pattern-fb-back */
+}
+.footer-logo:hover .pattern-youtube {
+  fill: #fff9f9; /* Change this to your desired hover fill color for pattern-fb */
+}
+
+.footer-logo:hover .pattern-youtube-back {
+  fill: #d1644d; /* Change this to your desired hover fill color for pattern-fb-back */
+}
+.footer-logo:hover .pattern-linkedin {
+  fill: #d1644d; /* Change this to your desired hover fill color for pattern-fb */
+}
+
+.footer-logo:hover .pattern-linkedin-back {
+  fill: #ffffff; /* Change this to your desired hover fill color for pattern-fb-back */
+}
+
+.footer-logo-svg {
+  margin-right: 8px;
+}
+/* Main Content Styles */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  margin-bottom: 2rem;
+}
+
+h1, h2, h3, p {
+  margin: 0 0 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+p {
+  font-size: 1.25em;
+  line-height: 1.6;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p {
+  color: #e0e0e0;
+}
+
+/* Form Styles */
+/* .form {
+  max-width: 600px;
+  margin: 0 auto;
+} */
+
+/* .form-container{
+  
+  padding: 0rem 12rem;
+} */
+/* Error Message Styles */
+.error-message {
+  color: rgb(159, 49, 49);
+  margin-bottom: 10px;
+}
+
+body.dark-mode .error-message {
+  color: rgb(159, 49, 49);
+  margin-bottom: 10px;
+}
+
+/* Star Rating Styles */
+.star {
+  margin-right: 5px;
+  color: gold;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Info Section Styles */
+.additional-info {
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.info-section {
+  margin-bottom: 20px;
+  border-left: 1px solid #020617;
+ 
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+.info-section p {
+  margin-bottom: 0px;
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+body.dark-mode .info-section p {
+  margin-bottom: 0px;
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
+body.dark-mode .info-section {
+  border-left: 1px solid #fff;
+    padding-left: 20px;
+  margin-left: 20px;
+   margin-bottom: 20px;
+}
+
+body.dark-mode .star {
+    margin-right: 5px;
+  color: #fff;
+}
+
+/* text size */
+.text-sm {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body.dark-mode .text-sm {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.text-xs {
+  /* color:#91402f ; */
+  font-size: .75rem;
+  line-height: 1rem;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body.dark-mode .text-xs {
+    /* color:#91402f ; */
+  font-size: .75rem;
+  line-height: 1rem;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+/* Profile Styles */
+.profile-container {
+  display: flex;
+  align-items: center;
+   padding-bottom: 2rem;
+}
+
+.profile-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid #d1644d; /* Add border color here */
+}
+
+.profile-username {
+  color: #020617;
+  font-weight: 600;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body.dark-mode .profile-username {
+  color: #fff;
+}
+
+.wallpaperImage-container {
+  position: relative;
+  padding-left: 1rem;
+  margin-left: auto;
+  position: relative;
+ padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.rectangleSvg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 48%;
+  z-index: 1;
+
+}
+/* body.dark-mode .rectangleSvg{
+  fill: #1f2937;
+} */
+
+.pattern-rect{
+fill: #e1e3e6;
+}
+body.dark-mode .pattern-rect{
+fill: #1f2937;
+}
+/* Additional Media Queries for Different Devices */
+@media (max-width: 1200px) {
+  .rectangleSvg {
+    width: 50%;
+  height: 48%;
+  }
+}
+
+@media (max-width: 992px) {
+  .rectangleSvg {
+    padding-top: 0.6%;
+    width: 50%;
+    height: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .rectangleSvg {
+    padding-top:1.8%;
+    width: 50%;
+    height: 48%;
+  }
+}
+
+@media (max-width: 576px) {
+  .rectangleSvg {
+    padding-top: 3.5%;
+    padding-left: 1.5%;
+    width: 50%;
+    height: 48%;
+  }
+}
+
+@media (max-width: 480px) {
+  .rectangleSvg {
+    padding-top: 4.5%;
+    padding-left: 1.5%;
+    width: 50%;
+    height: 48%;
+  }
+}
+
+
+.wallpaperImage-image {
+  position: relative;
+  z-index: 2;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  /* padding-top: 2rem; */
+}
+
+.wallpaperImageScrap-container {
+  padding-right: 1rem;
+  margin-right: auto;
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.wallpaperImageScrap-image {
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.convert-ideas-text {
+  font-weight: 900;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  text-align: center;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.convert-ideas-text-container {
+  text-align: center;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+  
+}
+
+/* ////////////////////////////////////// */
+
+/* @media (max-width: 1200px) {
+  .container {
+    padding: 20px 100px 50px 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 50px 50px 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 20px 50px 20px;
+  }
+} */
+/* ///////////////////////////////////// */
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  /* .container {
+    padding: 20px 50px;
+  } */
+
+  .heading {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+
+  .convert-ideas-text {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* .container {
+    padding: 20px;
+  } */
+
+  .heading {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+
+  .convert-ideas-text {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links a {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .additional-info {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  .convert-ideas-text {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  .info-section {
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .navbar-logo {
+    font-size: 1rem;
+  }
+
+  .navbar-links a {
+    font-size: 0.875rem;
+  }
+
+  .navbar-button {
+    font-size: 0.875rem;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+}
+
+.subheading-text{
+  line-height: 2rem;
+  padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 1rem;
+}
+
+
+
+
+
+.connectForSuccess-card{
+  /* background-color: #020617; */
+  padding-top: 3.5rem;
+  /* padding-bottom: 3.5rem; */
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 28rem;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.text-primary{
+  color: #d1644d;
+}
+
+.connectForSuccess-container{
+  padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius:  1rem;
+    background-color: #1f2937;
+    overflow: hidden;
+  
+}
+
+.connectForSuccess-text{
+  letter-spacing: -.025em;
+  font-weight: 900;
+  font-weight: 900;
+  position: relative;
+  color: #fff;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+.connectForSuccessSubheading-text{
+  color: #cbd5e1;
+  font-style: italic;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+.bottomContactbutton{
+  text-align: center;
+margin-top: 3rem;
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .subheading-text {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .bottom-remark-card {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .remark-text {
+    font-size: 1.1rem;
+  }
+
+  .remark-profile-image {
+    width: 30px;
+    height: 30px;
+  }
+
+  .remark-profile-username {
+    font-size: 1rem;
+  }
+
+  .remark-profile-image-container {
+    padding: 1rem;
+  }
+
+  .connectForSuccess-card {
+    padding-top: 2.5rem;
+  }
+
+  .connectForSuccess-container {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .connectForSuccess-text {
+    font-size: 1.75rem;
+  }
+
+  .bottomContactbutton {
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .subheading-text {
+    line-height: 1.75rem;
+  }
+
+  .bottom-remark-card {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .remark-text {
+    font-size: 1rem;
+  }
+
+  .remark-profile-image {
+    width: 25px;
+    height: 25px;
+  }
+
+  .remark-profile-username {
+    font-size: 0.9rem;
+  }
+
+  .remark-profile-image-container {
+    padding: 0.75rem;
+  }
+
+  .connectForSuccess-card {
+    padding-top: 2rem;
+  }
+
+  .connectForSuccess-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .connectForSuccess-text {
+    font-size: 1.5rem; 
+  }
+
+  .bottomContactbutton {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .subheading-text {
+    line-height: 1.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .bottom-remark-card {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .remark-text {
+    font-size: 0.9rem;
+  }
+
+  .remark-profile-image {
+    width: 20px;
+    height: 20px;
+  }
+
+  .remark-profile-username {
+    font-size: 0.8rem;
+  }
+
+  .remark-profile-image-container {
+    padding: 0.5rem;
+  }
+
+  .connectForSuccess-card {
+    padding-top: 1.5rem;
+  }
+
+  .connectForSuccess-container {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .connectForSuccess-text {
+    font-size: 1.25rem;
+  }
+  
+  .bottomContactbutton {
+    margin-top: 1.5rem;
+  }
+}
+
+/* signup form styles */
+
+.form-container{  
+  max-width: 800px;
+  margin: 0 auto;
+  /* padding: 20px; */
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem 3rem;
+}
+
+.form-container form{
+
+  padding: 0rem 10rem;
+}
+.login-form-container{  
+  max-width: 800px;
+  margin: 0 auto;
+  /* padding: 20px; */
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem 3rem;
+}
+
+body.dark-mode .login-form-container {
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+}
+.login-form-container form{
+
+  padding: 0rem 6rem;
+}
+
+body.dark-mode .form-container {
+  background-color: #0f1013;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(229, 226, 226, 0.1);
+  
+}
+
+/* .signup-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} */
+
+.form-column {
+  flex: 1;
+  margin: 1rem;
+}
+
+.info-icon {
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #d1644d;
+}
+/* 
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  background-color: #ccc;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+} */
+
+/* Add this to your CSS file */
+.stdropdown-container {
+  border: none;
+  text-align: left;
+  position: relative;
+  font-family: "Twemoji Mozilla" !important;
+}
+
+.stdropdown-menu {
+  position: absolute;
+  transform: translateY(4px);
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: auto;
+  max-height: 150px;
+  background-color: #fff;
+  z-index: 99;
+}
+
+body.dark-mode .stdropdown-menu {
+  position: absolute;
+  transform: translateY(4px);
+  width: 100%;
+  border-radius: 5px;
+  overflow: auto;
+  max-height: 150px;
+  background-color: #1e1e1e;
+  z-index: 99;
+}
+
+.stdropdown-item.selected {
+  background-color: #d1644d;
+  color: #fff;
+}
+
+/* .stdropdown-item:hover {
+  background-color:#575758;
+} */
+body.dark-mode .stdropdown-item:hover {
+  background-color:#575758;
+}
+ .stdropdown-item:hover {
+  background-color:#eeeeee;
+}
+body.dark-mode .stdropdown-menu::-webkit-scrollbar-track {
+  background: #575758;
+}
+.stdropdown-menu::-webkit-scrollbar-thumb:hover {
+  background: #d1644d;
+}
+.stdropdown-input {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.stsearch-box .stdropdown-tools .stdropdown-tool svg {
+background-color: #eeeeee;
+border-radius: 4px;
+margin-left: 1rem;
+}
+body.dark-mode .stsearch-box .stdropdown-tools .stdropdown-tool svg {
+background-color: #575758;
+border-radius: 4px;
+margin-left: 1rem;
+}
+
