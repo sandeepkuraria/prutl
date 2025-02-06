@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { registerUser } from "../../redux/slices/authSlice";
-// import PhoneInput from "react-phone-input-2";
 import {
   CitySelect,
   CountrySelect,

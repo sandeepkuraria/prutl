@@ -120,8 +120,8 @@ export default function Navbar() {
 
                 {user && tokenInLogin ? (
                   <>
-                    {userID && (
-                      <Menu
+                    {userID==="12" ? (
+                      <><Menu
                         as="div"
                         className="relative inline-block text-left"
                       >
@@ -400,15 +400,7 @@ export default function Navbar() {
                           </div>
                         </MenuItems>
                       </Menu>
-                    )}
-
-                    {/* <Link
-                      to="/projectCollaboration"
-                      className="block mt-2 lg:mt-0 lg:mx-4 text-lg hover:text-hoverLinkColor hover:no-underline navlinks"
-                    >
-                      Project Collaboration
-                    </Link> */}
-                     <Link
+                      <Link
                       to="/dashboard"
                       className="block mt-2 lg:mt-0 lg:mx-4 text-lg hover:text-hoverLinkColor hover:no-underline navlinks"
                     >
@@ -420,6 +412,38 @@ export default function Navbar() {
                     >
                       About Us
                     </Link>
+                      </>
+                    ):(<> <Link
+                      to="/dashboard"
+                      className="block mt-2 lg:mt-0 lg:mx-4 text-lg hover:text-hoverLinkColor hover:no-underline navlinks"
+                    >
+                      DashBoard
+                    </Link>
+                    <Link
+                      to="/aboutUs"
+                      className="block mt-2 lg:mt-0 lg:mx-4 text-lg hover:text-hoverLinkColor hover:no-underline navlinks"
+                    >
+                      About Us
+                    </Link></>)}
+
+                    {/* <Link
+                      to="/projectCollaboration"
+                      className="block mt-2 lg:mt-0 lg:mx-4 text-lg hover:text-hoverLinkColor hover:no-underline navlinks"
+                    >
+                      Project Collaboration
+                    </Link> */}
+                     {/* <Link
+                      to="/dashboard"
+                      className="block mt-2 lg:mt-0 lg:mx-4 text-lg hover:text-hoverLinkColor hover:no-underline navlinks"
+                    >
+                      DashBoard
+                    </Link>
+                    <Link
+                      to="/aboutUs"
+                      className="block mt-2 lg:mt-0 lg:mx-4 text-lg hover:text-hoverLinkColor hover:no-underline navlinks"
+                    >
+                      About Us
+                    </Link> */}
                    
                   </>
                 ) : (
@@ -487,7 +511,7 @@ export default function Navbar() {
                       to="/dashboard"
                       className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 hover:no-underline"
                     >
-                      Scoreboard
+                      Dashboard
                     </Link>
                   </MenuItem>
                 )}
@@ -537,7 +561,15 @@ export default function Navbar() {
         <div className="space-y-1 px-2 pt-2 pb-3">
           {userID && tokenInLogin ? (
             <>
-              <Menu as="div" className="relative inline-block text-left pl-3">
+            {userID==="12" ? 
+            (<>
+             <Link
+                to="/"
+                className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 hover:no-underline w-full justify-center gap-x-1.5 mt-2 lg:mt-0 lg:mx-4  navlinks "
+              >
+                Home
+              </Link>
+            <Menu as="div" className="relative inline-block text-left pl-3">
                 <div>
                   <MenuButton className="inline-flex w-full justify-center gap-x-1.5 mt-2 lg:mt-0 lg:mx-4 text-lg  hover:no-underline navlinks px-3 py-2  font-medium hover:text-white hover:bg-gray-700">
                     Manage
@@ -811,18 +843,319 @@ export default function Navbar() {
                   </div>
                 </MenuItems>
               </Menu>
-              {/* <Link
-                to="/projectCollaboration"
-                className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 hover:no-underline w-full justify-center gap-x-1.5 mt-2 lg:mt-0 lg:mx-4  navlinks  "
+              <Link
+                to="/dashboard"
+                className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 hover:no-underline w-full justify-center gap-x-1.5 mt-2 lg:mt-0 lg:mx-4  navlinks "
               >
-                Project Collaboration
-              </Link> */}
+                Dashboard
+              </Link>
+
               <Link
                 to="/aboutUs"
                 className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 hover:no-underline w-full justify-center gap-x-1.5 mt-2 lg:mt-0 lg:mx-4  navlinks "
               >
                 About Us
               </Link>
+              </>):(<> <Link
+                to="/aboutUs"
+                className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 hover:no-underline w-full justify-center gap-x-1.5 mt-2 lg:mt-0 lg:mx-4  navlinks "
+              >
+                About Us
+              </Link>
+              <Link
+                to="/dashboard"
+                className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 hover:no-underline w-full justify-center gap-x-1.5 mt-2 lg:mt-0 lg:mx-4  navlinks "
+              >
+                Dashboard
+              </Link>
+              </>)}
+              {/* <Menu as="div" className="relative inline-block text-left pl-3">
+                <div>
+                  <MenuButton className="inline-flex w-full justify-center gap-x-1.5 mt-2 lg:mt-0 lg:mx-4 text-lg  hover:no-underline navlinks px-3 py-2  font-medium hover:text-white hover:bg-gray-700">
+                    Manage
+                    <ChevronDownIcon
+                      aria-hidden="true"
+                      className="-mr-1 mt-1 h-5 w-5 hover:text-white ml-24"
+                    />
+                  </MenuButton>
+                </div>
+                <MenuItems
+                  transition
+                  className="absolute  right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in max-h-60 overflow-y-auto "
+                >
+                  <div className="py-1">
+                    <MenuItem>
+                      <Link
+                        to="/user-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        User Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/membership-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Membership Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/organization-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Organization Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/event-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Event Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/competition-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Competition Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/event-schedule-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Event Schedule Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/stream-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Stream Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/participants-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Participant Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/sponsors-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Sponsor Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/teams-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Team Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/committees-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Committee Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/committee-members-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Committee Members Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/awards-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Awards Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/scores-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Scores Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/sponsorships-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Sponsorships Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/passion-framework-dimensions-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Passion Framework Dimension Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/dimension-scores-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Dimension Scores Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/user-groups-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        User Groups Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/families-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Family Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/family-members-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Family Members Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/ai-insights-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        AI Insights Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/venues-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Venues Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/halls-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Halls Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/event-bookings-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Event Bookings Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/guest-services-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Guest Services Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/booking-services-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Booking Services Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/categories-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Categories Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/roles-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Roles Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/team-members-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Team Members Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/prutl-framework-dimensions-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Prutl Framework Dimensions Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/vehicles-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Vehicles Management
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link
+                        to="/parking-areas-management"
+                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 hover:no-underline"
+                      >
+                        Parking Areas Management
+                      </Link>
+                    </MenuItem>
+                  </div>
+                </MenuItems>
+              </Menu> */}
+              
+              {/* <Link
+                to="/projectCollaboration"
+                className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 hover:no-underline w-full justify-center gap-x-1.5 mt-2 lg:mt-0 lg:mx-4  navlinks  "
+              >
+                Project Collaboration
+              </Link> */}
+              {/* <Link
+                to="/aboutUs"
+                className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 hover:no-underline w-full justify-center gap-x-1.5 mt-2 lg:mt-0 lg:mx-4  navlinks "
+              >
+                About Us
+              </Link> */}
             </>
           ) : (
             <>

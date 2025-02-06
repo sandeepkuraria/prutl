@@ -168,11 +168,11 @@ import { getAllTeams } from '../../redux/slices/teamSlice';
   
     return (
         <div>
-          <div className="flex justify-between items-center mb-4">
+          <div className="flex justify-between items-center mb-4 ">
             {/* <h2 className="text-xl font-bold">Score Chart</h2> */}
             <button
               onClick={toggleLabels}
-              className="bg-blue-500 text-white px-4 py-2 rounded"
+              className="mt-6 inline-block button-bg text-white px-6 py-3 rounded-lg text-lg font-semibold "
             >
               {showUsers ? "Show Team Names" : "Show User Names"}
             </button>
@@ -184,7 +184,7 @@ import { getAllTeams } from '../../redux/slices/teamSlice';
 </div>
 
 </div> */}
-<div style={{ width: '800px', height: '600px' }}> {/* Set custom chart size */}
+<div style={{ width: '800px', height: '600px' }} className='loginFormContainer'> {/* Set custom chart size */}
           <Bar data={data} options={options} />
 </div>
  {/* <div style={{ width: '100%', overflowX: 'auto' }}> 

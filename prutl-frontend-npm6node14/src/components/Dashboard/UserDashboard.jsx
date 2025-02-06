@@ -299,84 +299,52 @@ const ScoreDetailsModal = ({ score, isOpen, onClose, getTeamName, getCompetition
   };
   return (
     <div>
-      <div className="  ">
+      <div className="loginFormContainer my-3 py-3 px-1">
         <h2 className="text-xl font-bold">Top Scores</h2>
-        <div className="flex items-center justify-between">
-          <div className="leaderboard registerCard p-4">
-            {[...scores] // Create a shallow copy of the array
-              .sort((a, b) => b.score_value - a.score_value) // Sort by top score
-              .slice(0, 3) // Show top 3 scores
-              .map((topScore, index) => (
-                <div
-                  key={topScore.score_id}
-                  className="flex items-center justify-between"
-                >
-                  <button
-                    onClick={() => {
-                      handleScoreClick(topScore);
-                    }}
-                    className="text-blue-500 underline focus:outline-none"
-                  >
-                    <span>
-                      {index + 1}. {getUserOrTeamName(topScore)}
-                    </span>
-                    <span>{topScore.score_value.toFixed(2)}</span>
-                  </button>
-
-                  {/* {selectedScore &&
-                    selectedScore.score_id === topScore.score_id && (
-                      <div className="fixed inset-0 bg-gray-500 bg-opacity-75 flex justify-center items-center">
-                      <div className="bg-white p-6 rounded-lg shadow-lg w-1/2 max-w-lg">
-                                            <p>
-                          <strong>Team:</strong> {getTeamName(selectedScore)}
-                        </p>
-                        <p>
-                          <strong>Competition:</strong>{" "}
-                          {getCompetitionName(selectedScore)}
-                        </p>
-                        <p>
-                          <strong>Event:</strong>{" "}
-                          {getEventName(selectedScore.competition_id)}
-                        </p>
-                        <p>
-                          <strong>Score:</strong>{" "}
-                          {selectedScore.score_value.toFixed(2)}
-                        </p>
-                        <p>
-                          <strong>Month:</strong>{" "}
-                          {getMonthName(selectedScore.month)}
-                        </p>
-                        <button
-          onClick={onClose}
-          className="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg"
+        <div className="leaderboard registerCard p-4">
+  <div className="grid grid-cols-3 gap-4">
+    {[...scores] // Create a shallow copy of the array
+      .sort((a, b) => b.score_value - a.score_value) // Sort by top score
+      .slice(0, 3) // Show top 3 scores
+      .map((topScore, index) => (
+        <div
+          key={topScore.score_id}
+          className="loginFormContainer p-3 rounded-lg shadow-md flex flex-col items-center justify-center"
         >
-          Close
-        </button>
-                      </div>
-                      
-                      </div>
+          <button
+            onClick={() => handleScoreClick(topScore)}
+            className="text-home hover:underline focus:outline-none text-center"
+          >
+            <span className="block font-semibold">
+              {index + 1}. {getUserOrTeamName(topScore)}
+            </span>
+            <span className="text-lg font-bold">{topScore.score_value.toFixed(2)}</span>
+          </button>
+        </div>
+      ))}
+  </div>
 
-                    )} */}
-                     {/* Render the modal for selected score details */}
-      <ScoreDetailsModal
-        score={selectedScore}
-        isOpen={isModalOpen}
-        onClose={closeModal}
-        getTeamName={getTeamName}
-        getCompetitionName={getCompetitionName}
-        getCategoryName={getCategoryName}
-        getEventName={getEventName}
-        getMonthName={getMonthName}
-      />
-                </div>
-              ))}
-          </div>
+  {/* Render the modal for selected score details */}
+  <ScoreDetailsModal
+    score={selectedScore}
+    isOpen={isModalOpen}
+    onClose={closeModal}
+    getTeamName={getTeamName}
+    getCompetitionName={getCompetitionName}
+    getCategoryName={getCategoryName}
+    getEventName={getEventName}
+    getMonthName={getMonthName}
+  />
+</div>
+
+        <div className="flex items-center justify-between">
+          
           <div className="filters flex justify-between mb-4 mt-2">
             <select
               onChange={handleFilterChange}
               name="competition"
               value={filters.competition} // Bind to filter state
-              className="mx-2 registerCard"
+              className="mx-2 loginFormContainer"
             >
               <option value="">All Competitions</option>
               {competitions.map((comp) => (
@@ -389,7 +357,7 @@ const ScoreDetailsModal = ({ score, isOpen, onClose, getTeamName, getCompetition
               onChange={handleFilterChange}
               name="category"
               value={filters.category} // Bind to filter state
-              className="mx-2 registerCard"
+              className="mx-2 loginFormContainer"
             >
               <option value="">All Categories</option>
               {categories.map((category) => (
@@ -403,7 +371,7 @@ const ScoreDetailsModal = ({ score, isOpen, onClose, getTeamName, getCompetition
               onChange={handleFilterChange}
               name="year"
               value={filters.year} // Bind to filter state
-              className="mx-2 registerCard"
+              className="mx-2 loginFormContainer"
             >
               <option value="">All Years</option>
               {[...new Set(scores.map((score) => score.year))].map((year) => (
@@ -417,7 +385,7 @@ const ScoreDetailsModal = ({ score, isOpen, onClose, getTeamName, getCompetition
               onChange={handleFilterChange}
               name="month"
               value={filters.month} // Bind to filter state
-              className="mx-2 registerCard"
+              className="mx-2 loginFormContainer"
             >
               <option value="">All Months</option>
               {[...new Set(scores.map((score) => score.month))].map((month) => (
@@ -431,7 +399,7 @@ const ScoreDetailsModal = ({ score, isOpen, onClose, getTeamName, getCompetition
               onChange={handleFilterChange}
               name="user"
               value={filters.user} // Bind to filter state
-              className="mx-2 registerCard"
+              className="mx-2 loginFormContainer"
             >
               <option value="">All Users</option>
               {users.map((user) => (
@@ -445,7 +413,7 @@ const ScoreDetailsModal = ({ score, isOpen, onClose, getTeamName, getCompetition
               onChange={handleFilterChange}
               name="team"
               value={filters.team} // Bind to filter state
-              className="mx-2 registerCard"
+              className="mx-2 loginFormContainer"
             >
               <option value="">All Teams</option>
               {teams.map((team) => (
@@ -458,7 +426,7 @@ const ScoreDetailsModal = ({ score, isOpen, onClose, getTeamName, getCompetition
             {/* Reset Button */}
             <button
               onClick={handleResetFilters}
-              className="bg-red-500 text-white px-4 py-2 rounded-md"
+              className=" inline-block button-bg text-lg font-semibold text-white px-4 py-2 rounded-md"
             >
               Reset
             </button>
@@ -485,7 +453,7 @@ const ScoreDetailsModal = ({ score, isOpen, onClose, getTeamName, getCompetition
       </div> */}
 
       {/* Filtered Scores Table */}
-      <div className="filtered-scores-table p-4">
+      <div className="filtered-scores-table p-4 loginFormContainer">
         <h2 className="text-xl font-bold mb-4">Filtered Scores</h2>
         {filteredScores.length > 0 ? (
           <table className="min-w-full registerCard border-collapse border border-gray-200 ">
